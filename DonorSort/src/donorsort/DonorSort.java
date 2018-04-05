@@ -74,7 +74,7 @@ public class DonorSort {
         Collections.sort(bothYearList);
         Collections.sort(thisYearList2);
         for(String a : lastYearList2){
-            if (a == lastYearList2.get(lastYearList2.size() - 1)){
+            if (a.equals(lastYearList2.get(lastYearList2.size() - 1))){
                 System.out.print(a); 
             } else {
                 System.out.print(a + ",");   
@@ -82,7 +82,7 @@ public class DonorSort {
         }
         System.out.println();
         for(String b : bothYearList){
-            if (b == bothYearList.get(bothYearList.size() - 1)){
+            if (b.equals(bothYearList.get(bothYearList.size() - 1))){
                 System.out.print(b); 
             } else {
                 System.out.print(b + ",");   
@@ -90,7 +90,7 @@ public class DonorSort {
         }
         System.out.println();
         for(String c : thisYearList2){
-            if (c == thisYearList2.get(thisYearList2.size() - 1)){
+            if (c.equals(thisYearList2.get(thisYearList2.size() - 1))){
                 System.out.print(c); 
             } else {
                 System.out.print(c + ",");   
