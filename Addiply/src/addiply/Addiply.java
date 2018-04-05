@@ -1,21 +1,35 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ Nowadays if you put two things together you need to come up with a cool name to
+describe the two things together, like Bennifer or Brangelina. In this problem,
+you will deal with the concepts of addition and multiplication. You will
+Addiply! Your task is to write a program which does simple addition and
+multiplication based on 2 input numbers.
+
+The first line of the file Prob03.in.txt will contain a positive integer T
+denoting the number of test cases that follow.  Each test case will have the 
+following input:
+
+A single line containing two positive integers separated by a space.
+The numbers will be small enough that they will not be bigger than
+Integer.MAX_VALUE when multiplied together.
+
+Example Input:
+2 2
+5 4
+3 8
+
+Example Output:
+4 4
+9 20
+11 24
+*/
+
 package addiply;
 
 import java.util.Scanner;
 
-/**
- *
- * @author power user
- */
 public class Addiply {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();

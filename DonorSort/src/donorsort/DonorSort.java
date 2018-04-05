@@ -1,7 +1,42 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ A local charity has hired you to help organize their lists of donors.  
+The organization has a list of people who donated to the organization last year,
+and another list of this year’s donors.  The group wants to send emails to three
+groups of people:
+
+*People who donated last year but didn’t this year
+*People who donated both years
+*People who donated this year but didn’t last year
+
+Each group will receive a different email, so they need to know which donors
+belong to each group.
+
+The first line of the file Prob05.in.txt will contain a positive integer T 
+denoting the number of test cases that follow.  Each test case will have the 
+following input:
+
+The first line of each test case will contain a comma separated list of the
+names of last year’s donors.
+The second line of each test case will contain a comma separated list of the
+names of this year’s donors.
+
+Example Input:
+
+Bob,Joe,Steve,Mary,Ann
+Bob,Steve,Ann,Paula,Chris
+
+Bill,Ted,Liz,Quinn
+Quinn,Liz,Ken,Bill
+
+Example Output:
+
+Joe,Mary
+Ann,Bob,Steve
+Chris,Paula
+
+Ted
+Bill,Liz,Quinn
+Ken
  */
 package donorsort;
 
@@ -11,15 +46,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author power user
- */
 public class DonorSort {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String lineOne = scan.nextLine();
